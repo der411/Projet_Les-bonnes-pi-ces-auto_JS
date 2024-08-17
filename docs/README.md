@@ -1,11 +1,40 @@
-# 7697016-Front-End.1
+# Les Bonnes Pièces Auto ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) ![Node.js](https://img.shields.io/badge/-Node.js-green) ![CSS](https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=white) ![HTML](https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=white)
 
-Code base du fil rouge pour le cours OpenClassrooms [Créez des pages web dynamiques avec JavaScript](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
+## Exercice réalisé avec Open Classrooms
 
-## Installation
+Cette application est un gestionnaire de pièces automobiles en ligne, permettant aux utilisateurs de consulter, filtrer et trier les pièces disponibles. L'application permet également de gérer les avis des utilisateurs sur les pièces proposées, d'afficher des graphiques basés sur ces avis, et de générer automatiquement des avis pour des tests à l'aide de Faker.js.
 
-Après avoir cloné le repo vous avez plusieurs options pour lancer le projet. 
+# Aperçu 🎨
 
-Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
+![Aperçu](https://live.staticflickr.com/65535/53928690585_fa8b89eb4d_n.jpg)
+![Aperçu](https://live.staticflickr.com/65535/53928242481_805191199b_n.jpg)
 
-Dans le cas contraire vous pouvez installer les dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Vous verrez dans le termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+# Fonctionnalités 📋
+- Récupération des pièces : Les pièces sont récupérées depuis un serveur local et stockées dans le localStorage pour une utilisation plus rapide.
+- Affichage dynamique des pièces : Les pièces sont affichées dynamiquement en fonction des filtres appliqués.
+- Tri et filtre : Possibilité de trier les pièces par prix (croissant et décroissant) et de les filtrer par disponibilité et prix maximal.
+- Gestion des avis : Les utilisateurs peuvent consulter et soumettre des avis associés à chaque pièce.
+- Génération d'avis : Utilisation de Faker.js pour générer des avis simulés pour les tests et le développement.
+- Graphiques dynamiques : Affichage de graphiques en barres pour visualiser la distribution des avis par nombre d'étoiles et la disponibilité des pièces.
+
+# Installation 🔧
+1. Clonez le dépôt :
+   ```sh
+   git clone git@github.com:der411/Projet_Les-bonnes-pi-ces-auto_JS.git
+   ```
+3. Installez les dépendances :
+   ```sh
+   npm install
+   ```
+4. Démarrez l'application :
+   ```sh
+   npm start
+   ```
+5. Assurez-vous que le serveur back-end est en cours d'exécution sur le port 8081.
+
+# Technologies Utilisées 🚀
+- **JavaScript :** Utilisé pour la logique de gestion des pièces et des avis.
+- **Node.js :** Utilisé pour le serveur back-end fournissant les données des pièces.
+- **HTML/CSS :** Structure et style de l'interface utilisateur.
+- **Faker.js :** Pour générer des données d'avis fictifs pour les tests.
+- **Chart.js :** Utilisé pour afficher les graphiques des avis et des disponibilités.
